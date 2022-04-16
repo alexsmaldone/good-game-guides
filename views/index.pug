@@ -31,7 +31,7 @@ block content
                         each list in noWant
                             li.no-guides #{list}
                         each guide in wantToGuides
-                            a(href=`/game-guides/${guide.id}`)
+                            a(href=`/game-guides/${guide.GameGuide.id}`)
                                 li: img.want-square(src=`${guide.GameGuide.coverImg}`)
                 else
                     a(href="/users/login")
